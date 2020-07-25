@@ -4,7 +4,7 @@ public class FizzBuzz {
 	public static String fizzBuzz(int naturalNumberGreaterThanZero) {
 		if (isFizz(naturalNumberGreaterThanZero)) {
 			return "Fizz";
-		} else if (naturalNumberGreaterThanZero == 5) {
+		} else if (naturalNumberGreaterThanZero % 5 == 0) {
 			return "Buzz";
 		}
 		
