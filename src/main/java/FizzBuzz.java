@@ -1,3 +1,4 @@
+import java.util.Optional;
 
 public class FizzBuzz {
 
@@ -5,16 +6,16 @@ public class FizzBuzz {
 	private static final int BUZZ_DIVISOR = 5;
 
 	public static String fizzBuzz(int number) {
-		String maybeWackyText = fizz(number) + buzz(number);
-		return orGivenNumber(maybeWackyText, number);
+		return generateWackyText(number).orElse(String.valueOf(number));
 	}
 
-	private static String orGivenNumber(String maybeWackyText, int number) {
-		if (!maybeWackyText.isEmpty()) {
-			return maybeWackyText; 
+	private static Optional<String> generateWackyText(int number) {
+		String maybeWackyText = fizz(number) + buzz(number);
+		if (maybeWackyText.isEmpty()) {
+			return Optional.empty();
 		}
 		
-		return String.valueOf(number);
+		return Optional.of(maybeWackyText);
 	}
 
 	private static String fizz(int naturalNumberGreaterThanZero) {
