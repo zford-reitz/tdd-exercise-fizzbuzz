@@ -10,7 +10,7 @@ public class FizzBuzz {
 		} else if (isFizz(naturalNumberGreaterThanZero)) {
 			return "Fizz";
 		} else if (isBuzz(naturalNumberGreaterThanZero)) {
-			return "Buzz";
+			return buzz(naturalNumberGreaterThanZero);
 		}
 		
 		return String.valueOf(naturalNumberGreaterThanZero);
