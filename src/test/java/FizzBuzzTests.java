@@ -5,8 +5,8 @@ import org.junit.jupiter.api.Test;
 public class FizzBuzzTests {
 
 	@Test
-	void thisIsASampleFailingTest() {
-		fail("the name says it all, really");
+	void returnGivenNumberForOne() {
+		assertEquals(1, FizzBuzz.fizzBuzz(1));
 	}
 	
 }
