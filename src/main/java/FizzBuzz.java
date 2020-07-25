@@ -4,13 +4,13 @@ public class FizzBuzz {
 	private static final int FIZZ_DIVISOR = 3;
 	private static final int BUZZ_DIVISOR = 5;
 
-	public static String fizzBuzz(int naturalNumberGreaterThanZero) {
-		String s = fizz(naturalNumberGreaterThanZero) + buzz(naturalNumberGreaterThanZero);
+	public static String fizzBuzz(int number) {
+		String s = fizz(number) + buzz(number);
 		if (!s.isEmpty()) {
 			return s; 
 		}
 		
-		return String.valueOf(naturalNumberGreaterThanZero);
+		return String.valueOf(number);
 	}
 
 	private static String fizz(int naturalNumberGreaterThanZero) {
