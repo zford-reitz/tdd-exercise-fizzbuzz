@@ -16,6 +16,14 @@ public class FizzBuzz {
 		return String.valueOf(naturalNumberGreaterThanZero);
 	}
 
+	private static String buzz(int naturalNumberGreaterThanZero) {
+		if (isBuzz(naturalNumberGreaterThanZero)) {
+			return "Buzz";
+		}
+		
+		return "";
+	}
+	
 	private static boolean isFizzBuzz(int naturalNumberGreaterThanZero) {
 		return isFizz(naturalNumberGreaterThanZero) && isBuzz(naturalNumberGreaterThanZero);
 	}
