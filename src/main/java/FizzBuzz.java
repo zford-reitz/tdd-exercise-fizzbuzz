@@ -8,13 +8,22 @@ public class FizzBuzz {
 		if (isFizzBuzz(naturalNumberGreaterThanZero)) {
 			return "FizzBuzz";
 		} else if (isFizz(naturalNumberGreaterThanZero)) {
-			return "Fizz";
+			return fizz(naturalNumberGreaterThanZero);
 		} else if (isBuzz(naturalNumberGreaterThanZero)) {
 			return buzz(naturalNumberGreaterThanZero);
 		}
 		
 		return String.valueOf(naturalNumberGreaterThanZero);
 	}
+
+	private static String fizz(int naturalNumberGreaterThanZero) {
+		if (isFizz(naturalNumberGreaterThanZero)) {
+			return "Fizz";
+		}
+		
+		return "";
+	}
+	
 
 	private static String buzz(int naturalNumberGreaterThanZero) {
 		if (isBuzz(naturalNumberGreaterThanZero)) {
