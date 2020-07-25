@@ -46,19 +46,6 @@ public class FizzBuzz {
 		return Optional.of(wackyText);
 	}
 
-	private static void fizz(int number, StringBuilder textOutput) {
-		if (isFizz(number)) {
-			textOutput.append("Fizz");
-		}
-	}
-	
-
-	private static void buzz(int number, StringBuilder textOutput) {
-		if (isBuzz(number)) {
-			textOutput.append("Buzz");
-		}
-	}
-	
 	private static boolean isFizz(int number) {
 		return number % FIZZ_DIVISOR == 0;
 	}
