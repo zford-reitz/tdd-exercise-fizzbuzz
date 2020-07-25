@@ -5,7 +5,7 @@ public class FizzBuzz {
 	private static final int BUZZ_DIVISOR = 5;
 
 	public static String fizzBuzz(int naturalNumberGreaterThanZero) {
-		if (isFizz(naturalNumberGreaterThanZero) && isBuzz(naturalNumberGreaterThanZero)) {
+		if (isFizzBuzz(naturalNumberGreaterThanZero)) {
 			return "FizzBuzz";
 		} else if (isFizz(naturalNumberGreaterThanZero)) {
 			return "Fizz";
@@ -14,6 +14,10 @@ public class FizzBuzz {
 		}
 		
 		return String.valueOf(naturalNumberGreaterThanZero);
+	}
+
+	private static boolean isFizzBuzz(int naturalNumberGreaterThanZero) {
+		return isFizz(naturalNumberGreaterThanZero) && isBuzz(naturalNumberGreaterThanZero);
 	}
 
 	private static boolean isFizz(int naturalNumberGreaterThanZero) {
