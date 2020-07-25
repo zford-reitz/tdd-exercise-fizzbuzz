@@ -1,6 +1,9 @@
 
 public class FizzBuzz {
 
+	private static final int FIZZ_DIVISOR = 3;
+	private static final int BUZZ_DIVISOR = 5;
+
 	public static String fizzBuzz(int naturalNumberGreaterThanZero) {
 		if (isFizz(naturalNumberGreaterThanZero)) {
 			return "Fizz";
@@ -12,11 +15,11 @@ public class FizzBuzz {
 	}
 
 	private static boolean isFizz(int naturalNumberGreaterThanZero) {
-		return naturalNumberGreaterThanZero % 3 == 0;
+		return naturalNumberGreaterThanZero % FIZZ_DIVISOR == 0;
 	}
 
 	private static boolean isBuzz(int naturalNumberGreaterThanZero) {
-		return naturalNumberGreaterThanZero % 5 == 0;
+		return naturalNumberGreaterThanZero % BUZZ_DIVISOR == 0;
 	}
 	
 }
