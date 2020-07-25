@@ -5,8 +5,8 @@ public class FizzBuzz {
 	private static final int BUZZ_DIVISOR = 5;
 
 	public static String fizzBuzz(int number) {
-		String s = fizz(number) + buzz(number);
-		return orGivenNumber(s, number);
+		String maybeWackyText = fizz(number) + buzz(number);
+		return orGivenNumber(maybeWackyText, number);
 	}
 
 	private static String orGivenNumber(String maybeWackyText, int number) {
