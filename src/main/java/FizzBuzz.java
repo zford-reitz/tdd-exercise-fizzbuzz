@@ -6,6 +6,10 @@ public class FizzBuzz {
 
 	public static String fizzBuzz(int number) {
 		String s = fizz(number) + buzz(number);
+		return orGivenNumber(s, number);
+	}
+
+	private static String orGivenNumber(String s, int number) {
 		if (!s.isEmpty()) {
 			return s; 
 		}
