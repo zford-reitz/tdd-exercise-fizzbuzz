@@ -5,4 +5,7 @@ public class FizzBuzz {
 		return naturalNumberGreaterThanZero;
 	}
 
+	public static String fizzBuzzString(int naturalNumberGreaterThanZero) {
+		return "Fizz";
+	}
 }
