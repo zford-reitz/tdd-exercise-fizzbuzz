@@ -10,29 +10,29 @@ public class FizzBuzz {
 	}
 
 	private static Optional<String> generateWackyText(int number) {
-		String maybeWackyText = fizz(number) + buzz(number);
-		if (maybeWackyText.isEmpty()) {
+		StringBuilder wackyTextBuilder = new StringBuilder();
+		fizz(number, wackyTextBuilder);
+		buzz(number, wackyTextBuilder);
+		
+		String wackyText = wackyTextBuilder.toString();
+		if (wackyText.isEmpty()) {
 			return Optional.empty();
 		}
 		
-		return Optional.of(maybeWackyText);
+		return Optional.of(wackyText);
 	}
 
-	private static String fizz(int number) {
+	private static void fizz(int number, StringBuilder textOutput) {
 		if (isFizz(number)) {
-			return "Fizz";
+			textOutput.append("Fizz");
 		}
-		
-		return "";
 	}
 	
 
-	private static String buzz(int number) {
+	private static void buzz(int number, StringBuilder textOutput) {
 		if (isBuzz(number)) {
-			return "Buzz";
+			textOutput.append("Buzz");
 		}
-		
-		return "";
 	}
 	
 	private static boolean isFizz(int number) {
