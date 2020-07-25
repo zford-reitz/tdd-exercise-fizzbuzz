@@ -14,4 +14,9 @@ public class FizzBuzzTests {
 		assertEquals(2, FizzBuzz.fizzBuzz(2));
 	}
 	
+	@Test
+	void returnFizzForThree() {
+		assertEquals("Fizz", FizzBuzz.fizzBuzz(3));
+	}
+	
 }
