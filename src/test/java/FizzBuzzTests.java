@@ -9,4 +9,9 @@ public class FizzBuzzTests {
 		assertEquals(1, FizzBuzz.fizzBuzz(1));
 	}
 	
+	@Test
+	void returnGivenNumberForTwo() {
+		assertEquals(2, FizzBuzz.fizzBuzz(2));
+	}
+	
 }
