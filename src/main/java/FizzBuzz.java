@@ -18,8 +18,8 @@ public class FizzBuzz {
 		return Optional.of(maybeWackyText);
 	}
 
-	private static String fizz(int naturalNumberGreaterThanZero) {
-		if (isFizz(naturalNumberGreaterThanZero)) {
+	private static String fizz(int number) {
+		if (isFizz(number)) {
 			return "Fizz";
 		}
 		
@@ -27,20 +27,20 @@ public class FizzBuzz {
 	}
 	
 
-	private static String buzz(int naturalNumberGreaterThanZero) {
-		if (isBuzz(naturalNumberGreaterThanZero)) {
+	private static String buzz(int number) {
+		if (isBuzz(number)) {
 			return "Buzz";
 		}
 		
 		return "";
 	}
 	
-	private static boolean isFizz(int naturalNumberGreaterThanZero) {
-		return naturalNumberGreaterThanZero % FIZZ_DIVISOR == 0;
+	private static boolean isFizz(int number) {
+		return number % FIZZ_DIVISOR == 0;
 	}
 
-	private static boolean isBuzz(int naturalNumberGreaterThanZero) {
-		return naturalNumberGreaterThanZero % BUZZ_DIVISOR == 0;
+	private static boolean isBuzz(int number) {
+		return number % BUZZ_DIVISOR == 0;
 	}
 	
 }
