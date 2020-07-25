@@ -6,17 +6,17 @@ public class FizzBuzzTests {
 
 	@Test
 	void returnGivenNumberForOne() {
-		assertEquals("1", FizzBuzz.fizzBuzzString(1));
+		assertEquals("1", FizzBuzz.fizzBuzz(1));
 	}
 	
 	@Test
 	void returnGivenNumberForTwo() {
-		assertEquals("2", FizzBuzz.fizzBuzzString(2));
+		assertEquals("2", FizzBuzz.fizzBuzz(2));
 	}
 	
 	@Test
 	void returnFizzForThree() {
-		assertEquals("Fizz", FizzBuzz.fizzBuzzString(3));
+		assertEquals("Fizz", FizzBuzz.fizzBuzz(3));
 	}
 	
 }
