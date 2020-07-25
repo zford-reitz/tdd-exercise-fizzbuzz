@@ -9,9 +9,9 @@ public class FizzBuzz {
 		return orGivenNumber(s, number);
 	}
 
-	private static String orGivenNumber(String s, int number) {
-		if (!s.isEmpty()) {
-			return s; 
+	private static String orGivenNumber(String maybeWackyText, int number) {
+		if (!maybeWackyText.isEmpty()) {
+			return maybeWackyText; 
 		}
 		
 		return String.valueOf(number);
