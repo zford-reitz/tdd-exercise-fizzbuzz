@@ -30,10 +30,6 @@ public class FizzBuzz {
 		return "";
 	}
 	
-	private static boolean isFizzBuzz(int naturalNumberGreaterThanZero) {
-		return isFizz(naturalNumberGreaterThanZero) && isBuzz(naturalNumberGreaterThanZero);
-	}
-
 	private static boolean isFizz(int naturalNumberGreaterThanZero) {
 		return naturalNumberGreaterThanZero % FIZZ_DIVISOR == 0;
 	}
